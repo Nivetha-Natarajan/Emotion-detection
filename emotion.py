@@ -1,11 +1,10 @@
+# My Emotion Detection Project
 import cv2
 import numpy as np
 import webbrowser
 from tensorflow.keras.models import load_model
 
-# =========================
 # Load Model
-# =========================
 model = load_model("emotion_model.h5")
 
 emotion_labels = {
@@ -28,9 +27,7 @@ spotify_query = {
     'neutral': 'chill songs'
 }
 
-# =========================
 # Start Webcam
-# =========================
 cap = cv2.VideoCapture(0)
 
 face_cascade = cv2.CascadeClassifier(
@@ -127,8 +124,6 @@ while True:
         print("Closing webcam...")
         break
 
-# =========================
 # Cleanup
-# =========================
 cap.release()
 cv2.destroyAllWindows()
