@@ -2,8 +2,4 @@
 train/
 test/
 val/
-emotion_model.h5
-emotion_model.keras
-emotion_model - Copy.h5
-emotion_model - Copy.keras
 __pycache__/
